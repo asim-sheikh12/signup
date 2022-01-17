@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+        <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <form id="formdata" method="get" onsubmit="signUp(event)">
+    <div class="mainbody">
+            <h1 style="color: royalblue;">Sign Up Page</h1>
+           <label>Enter Your First Name : </label>  
+        <input type="text" id="firstname" name="fstname" placeholder="Enter Firstname" re\><br>
+        <label>Enter Your Last Name : </label> 
+        <input type="text" id="lastname" name="lstname" placeholder="Enter Lastname" required><br>
+        <label>Enter Your Email : </label> 
+        <input type="email" id="email" placeholder="Enter email" required><br>
+        <label>Select your date of birth : </label>
+        <input type="date"  id="date" required><br>
+        <label>Choose Your Password :</label>
+        <input type="password" id="pass1" name="pw" placeholder="Choose Password" required><br>
+        <label>Confirm Your Password :</label> 
+        <input type="password" id="pass2" placeholder="Confirm Password" required><br><br>
+        <label>
+        <input style="margin-top:10px; background-color: gray;" type="submit" value="Sign Up " onclick="signup()">    <br><br>      
+       <p style="text-align: center;"> | Already have a account | </p>
+        <input style="margin-top:10px; background-color: gray;" type="button" value="Login" onclick="loginPage()">
+        </div>
+       <script>
+function loginPage() {
+  window.open("file:///home/lenovo/Codes/login.html");
+}
+
+</script>
+</form>
+    <script src="signup-login.js"></script>
+</body>
+
+</html>
